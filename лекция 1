@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a; float b;
+    double c; long d;
+    float s, v, e, f;
+    cin >> a >> b >> c>> d;
+    s = a + b;
+    v = c / d;
+    e = b * c;
+    f = a - d;
+    cout << "s=" << s << endl;
+    cout << "div=" << v << endl;
+    cout << "m=" << e << endl;
+    cout << "dif=" << f << endl;
+    return 0;
+}
