@@ -1,0 +1,18 @@
+задание 1
+--------------------------------------------------------
+#include <stdio.h>
+#include <fstream> 
+#include <iostream> 
+#include <cstring>
+using namespace std;
+int main()
+{int A,B;
+    cout<<"enter A and B(B>A)";
+    cin>>A>>B;
+    ofstream fin("output.txt");
+for(int i=A;i<=B;i++){
+    int j=i*3;
+    fin<<j<<endl;
+}
+fin.close();
+}
