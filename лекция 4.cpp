@@ -23,12 +23,15 @@ using namespace std;
  
 int main()
 {
- char L[100];
- cin>>L;
- int l=strlen(L);
+    char K[100];
+    cin>>K;
+   
+ char * L;
+ L=K;
+ int l=strlen(K);
  
  for(int i=0;i<=l-1;i++){
-     int asc=(int)L[i];
+     int asc=(int)*(L+i);
      if(asc==122){
          asc=asc-25;
      }
@@ -37,4 +40,5 @@ int main()
      }
      cout<<(char)asc;
  }
+}
  ---------------------------------------------------------------------------------------------------------------
